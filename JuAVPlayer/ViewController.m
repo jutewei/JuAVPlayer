@@ -38,7 +38,7 @@
 
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:remoteUrl]; // create item
     [_playerVc.player   replaceCurrentItemWithPlayerItem:playerItem]; // replaceCurrentItem
-    [_playerVc.player play];
+
 }
 /**
  创建播放器视图
@@ -70,9 +70,11 @@
 - (IBAction)juTouchPlay:(id)sender {
     if ([ju_btnPlay.currentTitle isEqual:@"播放"]) {
         [ju_vieVideo juPlay];
+         [_playerVc.player play];
         [ju_btnPlay setTitle:@"暂停" forState:UIControlStateNormal];
     }else{
         [ju_vieVideo juPause];
+         [_playerVc.player pause];
          [ju_btnPlay setTitle:@"播放" forState:UIControlStateNormal];
     }
 }
