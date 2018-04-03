@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		EBD0BA64207379FF004635FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0BA63207379FF004635FC /* AppDelegate.m */; };
-		EBD0BA67207379FF004635FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0BA66207379FF004635FC /* ViewController.m */; };
-		EBD0BA6A207379FF004635FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD0BA68207379FF004635FC /* Main.storyboard */; };
 		EBD0BA6C20737A00004635FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD0BA6B20737A00004635FC /* Assets.xcassets */; };
 		EBD0BA6F20737A00004635FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD0BA6D20737A00004635FC /* LaunchScreen.storyboard */; };
 		EBD0BA7220737A00004635FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0BA7120737A00004635FC /* main.m */; };
+		EBD0BA7D20737A17004635FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD0BA7920737A16004635FC /* Main.storyboard */; };
+		EBD0BA7E20737A17004635FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0BA7A20737A17004635FC /* ViewController.m */; };
+		EBD0BA7F20737A17004635FC /* JuAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0BA7C20737A17004635FC /* JuAVPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EBD0BA5F207379FF004635FC /* JuAVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuAVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD0BA62207379FF004635FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBD0BA63207379FF004635FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EBD0BA65207379FF004635FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EBD0BA66207379FF004635FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EBD0BA69207379FF004635FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD0BA6B20737A00004635FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBD0BA6E20737A00004635FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBD0BA7020737A00004635FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBD0BA7120737A00004635FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBD0BA7820737A16004635FC /* JuAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuAVPlayer.h; sourceTree = "<group>"; };
+		EBD0BA7920737A16004635FC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EBD0BA7A20737A17004635FC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EBD0BA7B20737A17004635FC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EBD0BA7C20737A17004635FC /* JuAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuAVPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +63,11 @@
 			children = (
 				EBD0BA62207379FF004635FC /* AppDelegate.h */,
 				EBD0BA63207379FF004635FC /* AppDelegate.m */,
-				EBD0BA65207379FF004635FC /* ViewController.h */,
-				EBD0BA66207379FF004635FC /* ViewController.m */,
-				EBD0BA68207379FF004635FC /* Main.storyboard */,
+				EBD0BA7820737A16004635FC /* JuAVPlayer.h */,
+				EBD0BA7C20737A17004635FC /* JuAVPlayer.m */,
+				EBD0BA7920737A16004635FC /* Main.storyboard */,
+				EBD0BA7B20737A17004635FC /* ViewController.h */,
+				EBD0BA7A20737A17004635FC /* ViewController.m */,
 				EBD0BA6B20737A00004635FC /* Assets.xcassets */,
 				EBD0BA6D20737A00004635FC /* LaunchScreen.storyboard */,
 				EBD0BA7020737A00004635FC /* Info.plist */,
@@ -128,9 +133,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD0BA7D20737A17004635FC /* Main.storyboard in Resources */,
 				EBD0BA6F20737A00004635FC /* LaunchScreen.storyboard in Resources */,
 				EBD0BA6C20737A00004635FC /* Assets.xcassets in Resources */,
-				EBD0BA6A207379FF004635FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD0BA67207379FF004635FC /* ViewController.m in Sources */,
+				EBD0BA7E20737A17004635FC /* ViewController.m in Sources */,
 				EBD0BA7220737A00004635FC /* main.m in Sources */,
+				EBD0BA7F20737A17004635FC /* JuAVPlayer.m in Sources */,
 				EBD0BA64207379FF004635FC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,14 +156,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EBD0BA68207379FF004635FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBD0BA69207379FF004635FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EBD0BA6D20737A00004635FC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
