@@ -26,11 +26,11 @@ AVKit视频播放自定义UI
  切换视频
  @param videoPath 视频地址
  */
-//- (void)replacePalyerItem:(NSString *)videoPath;
-- (void)replacePalyerItem:(NSURL *)videoURL;
+- (void)juReplacePalyerItem:(NSURL *)videoURL;
 
 
 // 播放进度刷新
 - (void)juPlayProgress:(NSTimeInterval)totalTime currentTime:(NSTimeInterval)currentTime LoadRange:(NSTimeInterval)loadTime;
+
 // 状态/错误 提示
 - (void)juPromptPlayerStatusOrErrorWith:(JUAVPlayerStatus)status;
