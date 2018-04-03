@@ -144,7 +144,7 @@
 
  @param videoURL 视频地址
  */
-- (void)replacePalyerItem:(NSURL *)videoURL{
+- (void)juReplacePalyerItem:(NSURL *)videoURL{
     self.isCanPlay = NO;
 
     [self juPause];

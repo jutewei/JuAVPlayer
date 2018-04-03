@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, JUAVPlayerStatus) {
 @protocol JuAVPlayerDelegate <NSObject>
 
 @optional
-// 进度刷新
+// 播放进度刷新
 - (void)juPlayProgress:(NSTimeInterval)totalTime currentTime:(NSTimeInterval)currentTime LoadRange:(NSTimeInterval)loadTime;
 // 状态/错误 提示
 - (void)juPromptPlayerStatusOrErrorWith:(JUAVPlayerStatus)status;
@@ -35,11 +35,9 @@ typedef NS_ENUM(NSInteger, JUAVPlayerStatus) {
 @interface JuAVPlayer : UIView
 @property (nonatomic, weak) id<JuAVPlayerDelegate>ju_Delegate;
 
-
 // 视频总长度
 @property (nonatomic, assign) NSTimeInterval ju_TotalTime;
-// 视频总长度
-//@property (nonatomic, assign) NSTimeInterval currentTime;
+
 // 缓存数据
 @property (nonatomic, assign) NSTimeInterval ju_LoadRange;
 
@@ -47,9 +45,8 @@ typedef NS_ENUM(NSInteger, JUAVPlayerStatus) {
 /**
  准备播放器
 
- @param videoPath 视频地址
+ @param videoURL 视频地址
  */
-//- (void)setupPlayerWith:(NSString *)videoPath;
 - (void)juSetupPlayerWith:(NSURL *)videoURL;
 
 /** 播放 */
@@ -64,16 +61,13 @@ typedef NS_ENUM(NSInteger, JUAVPlayerStatus) {
 /** 拖动视频进度 */
 - (void)juSeekPlayerTimeTo:(NSTimeInterval)time;
 
-/** 跳动中不监听 */
-- (void)juStartToSeek;
 
 /**
  切换视频
-
- @param videoPath 视频地址
+ @param videoURL 视频地址
  */
-//- (void)replacePalyerItem:(NSString *)videoPath;
-- (void)replacePalyerItem:(NSURL *)videoURL;
+
+- (void)juReplacePalyerItem:(NSURL *)videoURL;
 
 
 @end
