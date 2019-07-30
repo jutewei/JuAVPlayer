@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
   s.license = 'MIT'
   s.platform    = :ios
   s.author  = {'Juvid' => 'jutewei@qq.com'}
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.source  = {:git => 'https://github.com/jutewei/JuAVPlayer.git', :tag => s.version}
-  s.source_files  = "Source", "Source/**/*.{h,m}"
+  s.source_files  =  "JuAVPlayer/JuPlayer/*.{h,m}"
   s.requires_arc = true
   s.frameworks  = 'UIKit', 'AVFoundation', 'Photos'
 

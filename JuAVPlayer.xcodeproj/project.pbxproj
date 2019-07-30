@@ -42,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB9BD0E022F01A0500D80865 /* JuPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				EBD0BA7820737A16004635FC /* JuAVPlayer.h */,
+				EBD0BA7C20737A17004635FC /* JuAVPlayer.m */,
+			);
+			path = JuPlayer;
+			sourceTree = "<group>";
+		};
 		EBD0BA56207379FF004635FC = {
 			isa = PBXGroup;
 			children = (
@@ -61,10 +70,9 @@
 		EBD0BA61207379FF004635FC /* JuAVPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				EB9BD0E022F01A0500D80865 /* JuPlayer */,
 				EBD0BA62207379FF004635FC /* AppDelegate.h */,
 				EBD0BA63207379FF004635FC /* AppDelegate.m */,
-				EBD0BA7820737A16004635FC /* JuAVPlayer.h */,
-				EBD0BA7C20737A17004635FC /* JuAVPlayer.m */,
 				EBD0BA7920737A16004635FC /* Main.storyboard */,
 				EBD0BA7B20737A17004635FC /* ViewController.h */,
 				EBD0BA7A20737A17004635FC /* ViewController.m */,
