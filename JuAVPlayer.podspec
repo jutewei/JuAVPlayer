@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name    = 'JuAVPlayer'
-  s.version = '1.0'
+  s.version = '1.1'
   s.summary = 'JuAVPlayer'
   s.homepage    = 'https://github.com/jutewei/JuAVPlayer'
   s.license = 'MIT'
